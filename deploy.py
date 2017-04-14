@@ -6,7 +6,7 @@ import re
 import os
 from time import sleep
 
-DELAY_TICK=0.05
+DELAY_TICK=0.1
 
 #TARGET_ROVER is now automatically determined based on userid. You may hardcode it below 
 USERNAME='rover'
@@ -54,13 +54,13 @@ i = 0
 l = len(items)
 
 # Initial call to print 0% progress
-printProgressBar(i, l, prefix = 'Transmitting:', suffix = 'Complete', length = 50)
+printProgressBar(i, l, prefix = 'Transmitting:', suffix = 'Complete', length = 40)
 for item in items:
     # Do stuff...
     sleep(DELAY_TICK)
     # Update Progress Bar
     i += 1
-    printProgressBar(i, l, prefix = 'Transmitting:', suffix = 'Complete', length = 50)
+    printProgressBar(i, l, prefix = 'Transmitting:', suffix = 'Complete', length = 40)
 
 
 # remote execution
@@ -91,13 +91,13 @@ client.close()
  
 i = 0
 # Initial call to print 0% progress
-printProgressBar(i, l, prefix = 'Receiving:', suffix = 'Complete', length = 50)
+printProgressBar(i, l, prefix = 'Receiving:', suffix = 'Complete', length = 40)
 for item in items:
     # Do stuff...
     sleep(DELAY_TICK)
     # Update Progress Bar
     i += 1
-    printProgressBar(i, l, prefix = 'Receiving:', suffix = 'Complete', length = 50)
+    printProgressBar(i, l, prefix = 'Receiving:', suffix = 'Complete', length = 40)
 
 
 #rsync data and img files. 
