@@ -6,7 +6,7 @@ import re
 import os
 from time import sleep
 
-DELAY_TICK=0.1
+DELAY_TICK=0.0
 
 #TARGET_ROVER is now automatically determined based on userid. You may hardcode it below 
 USERNAME='rover'
